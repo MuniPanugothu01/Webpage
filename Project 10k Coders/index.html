@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="icon" href="Style/client-01.png">
+  <!-- Icon  -->
+  <link rel="icon" href="">
+
+  <!-- Style.CSS Link -->
+  <link rel="stylesheet" href="Style/style.css">
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS Link -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!--Font-Awesome Links -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+
+
+  <!-- AOS Animation Link  CSS link CDN links-->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS Animation Link   JavaScript link CDN links-->
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <!-- Preloader start  -->
+
+  <!-- <div class="container container1" id="preloader">
+    <div class="loader">
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--text"></div>
+    </div>
+  </div> -->
+
+
+  <!-- Preloader End -->
+
+
+
+  <!-- Nav bar start -->
+
+  <section class="section">
+    <!-- Nab bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " data-aos="fade-down">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3 " href="#"><span style="color: #fff; font-family: 'Times New Roman', Times, serif;">
+            SIXTEEN </span>
+          <span style="color:  #FF4433; font-family: 'Times New Roman', Times, serif;"> CLOTHING </span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-lg-3">
+            <li class="navbar-nav a">
+              <a style="color: #fff; font-family: 'Times New Roman', Times, serif;"
+                class="a nav-link active ms-5 text-uppercase " aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item a">
+              <a style="color: #fff;font-family: 'Times New Roman', Times, serif; " class="a nav-link ms-5 text-uppercase"
+                href="#ourProducts">Our Products</a>
+            </li>
+            <li class="nav-item a">
+              <a style="color: #fff;font-family: 'Times New Roman', Times, serif;" class="a nav-link ms-5 text-uppercase"
+                href="#AboutUs">About Us</a>
+            </li>
+            <li class="nav-item a">
+              <a style="color: #fff;font-family: 'Times New Roman', Times, serif; " class="a nav-link ms-5 text-uppercase"
+                href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- Nav bar end -->
+
+
+
+  <!-- Home start -->
+
+  <section id="Home">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000" data-aos="fade-right">
+          <img src="Style/slide_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" data-aos="fade-left">
+            <h6 style="color: #FF4433; font-family: 'Times New Roman', Times, serif;" class="fs-3">BEST OFFER</h6>
+            <h1 style="color: #fff;font-family: 'Times New Roman', Times, serif;" class="mb-5 p-3 ">NEW ARRIVAL ON SALE
+            </h1>
+          </div>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="2000" data-aos="fade-right">
+          <img src="Style/slide_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h6 style="color: #FF4433; font-family: 'Times New Roman', Times, serif;" class="fs-3">BEST OFFER</h6>
+            <h1 style="color: #fff;font-family: 'Times New Roman', Times, serif;" class="mb-5 p-3">NEW ARRIVAL ON SALE
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Style/slide_03.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h6 style="color: #FF4433; font-family: 'Times New Roman', Times, serif;" class="fs-3" >BEST OFFER</h6>
+            <h1 style="color: #fff;font-family: 'Times New Roman', Times, serif;" class="mb-5 p-3">NEW ARRIVAL ON SALE
+            </h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Home End -->
+
+
+
+
+  <!-- Our Products section start -->
+
+  <section id="ourProducts">
+    <div class="container">
+      <div style="text-align: center;" data-aos="fade-down-right">
+        <h1 class="mt-lg-5 pt-lg-5 "
+          style="color: black; display: inline-block; font-family: 'Times New Roman', Times, serif; border-bottom: 2px solid #FF4433;">
+          <span style="color: #FF4433; font-family: 'Times New Roman', Times, serif;">OUR</span>-<span
+            style="color: black; font-family: 'Times New Roman', Times, serif;">PRODUCTS</span>
+        </h1>
+      </div>
+
+      <div class="parent" data-aos="flip-left">
+        <p class="fs-3  latest">Latest Products</p>
+        <a href="#cards" class="view">
+          <p class="view">VIEW ALL PRODUCTS <strong> > </strong> </p>
+        </a>
+      </div>
+
+      <hr>
+
+      <div class="row cards-images mt-5" id="cards">
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="flip-up">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><span class="span"> Title goes here </span>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; <strong>$25.75 </strong> </h5>
+
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (24)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="flip-down">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> <span class="span"> Title goes here </span>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; <strong>$30.25 </strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (21)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> <span class="span">Title goes here </span>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; <strong>$20.45</strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (36)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="zoom-in-up">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><span class="span"> Title goes here </span>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; <strong>$15.25</strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (48)</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_05.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> <span class="span">Title goes here </span>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp; <strong>$12.50</strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (16)</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12 col-md-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="card mt-3" style="width: 22rem;">
+            <img src="Style/product_06.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> <span class="span"> Title goes here </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp; &emsp; &emsp; <strong>$22.50</strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              <i class="fa-solid fa-star" style="color: #ff4433;"></i>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &emsp; &emsp;
+              <span style="color: #FF4433;">Reviews (32)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Our Products Sections End -->
+
+
+  <!-- About us Section start -->
+
+
+  <section id="AboutUs">
+    <div class="contaier">
+      <div class="container-fluid">
+        <div style="text-align: center;" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="mt-lg-5 pt-lg-5 "
+            style="color: black; display: inline-block; font-family: 'Times New Roman', Times, serif; border-bottom: 2px solid #FF4433;">
+            <span style="color: #FF4433; font-family: 'Times New Roman', Times, serif;">ABOUT</span>-<span
+              style="color: black; font-family: 'Times New Roman', Times, serif;">US</span>
+          </h1>
+        </div>
+
+        <div class="about" data-aos-anchor-placement="bottom-bottom">
+          <p class="fs-3 ms-5">About Sixteen Clothing</p>
+          <hr style="width: 90%;" class="ms-2">
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="center-center">
+            <h5 style="color: #60beeb;" class="ms-5">Looking for the best products?</h5>
+            <p> <span style="color: #60beeb;text-align: justify;">This Template</span>is free to use for your business
+              websites. However, you nave to permissions to redistribute the downloadable
+              Zip file on any Template collection website. <a href="#"
+                style="color: #60beeb; text-decoration: none;">Contact Us</p></a> for more
+            informations.
+
+            <ul>
+              <li>Lorem ipsum dolor, sit amet consectetur </li>
+              <li>Lorem ipsum dolor sit amet consectetur </li>
+              <li>Lorem ipsum dolor, sit amet consectetur</li>
+              <li>Lorem ipsum dolor sit amet consectetur </li>
+              <li>Lorem ipsum dolor sit amet, consectetur</li>
+            </ul>
+            <a href="#"> <button type="button" class="btn btn-danger ms-3 mt-1">Read More</button> </a>
+
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 image mt-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+            <img src="Style/feature-image.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <!-- About us section end -->
+
+
+  <!-- Fourth section start -->
+
+  <section>
+    <div class="container fouth" data-aos="fade-down-left">
+      <div class="row">
+        <div class="col-lg-10 col-sm-12 col-md-8">
+          <h5 style="color: #60beeb;">Creative & Unique <b>Sixteen</b>Products </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit provident quaerat a modi porro ut
+            mollitia ipsum! Necessitatibus, provident.</p>
+         
+        </div>
+        <div class="col-lg-2 col-sm-12 col-md-4 mt-3">
+          <a href="#"><button type="button" class="btn btn-danger">Purchase Now</button></a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- <section>
+    <h5 style="color: #60beeb;" class="ms-5">Creative & Unique <b>Sixteen</b>Products </h5>
+    <div class="container-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit provident quaerat a modi porro ut
+        mollitia ipsum! Necessitatibus, provident.</p>
+        <a href="#"><button type="button" class="btn btn-danger">Purchase Now</button></a>
+   
+    </div>
+  </section> -->
+
+
+  <!-- Fourth section end -->
+
+
+
+  <!--Copy Rights start  -->
+
+  <section class="mt-5">
+    <div class="container copyright" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <p>COPYRIGHT <i class="fa-regular fa-copyright"></i> 2020 SIXTEEN CLOTHING CO.,LTD - DESIGN: <span
+          style="color: #FF4433;">TEMPLATEMO</span> </p>
+    </div>
+  </section>
+
+  <!-- Copy Rights end -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- JavaScript Start  -->
+
+
+<script>
+
+  AOS.init();
+  // Preloader Start
+
+  let preloaderVisible = true;
+
+  function hidePreloader() {
+    if (!preloaderVisible) return;
+    preloaderVisible = false;
+    document.getElementById('preloader').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }
+
+  window.addEventListener('load', function () {
+    setTimeout(hidePreloader, 4000);
+  });
+
+  // Ensure the preloader is hidden after 4 seconds
+  setTimeout(hidePreloader, 4000);
+
+
+  // Preloader end
+
+</script>
+
+<!-- Preloader -->
+
+
+<!-- Javascript  End  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p class="best offer text-center">
+  <h2 class="text-center" style="color: #FF4433;">BEST OFFER</h2>
+  <h2 class="text-center text-uppercase">NEW ARRIVALS ON SALE</h2>
+  </p> -->

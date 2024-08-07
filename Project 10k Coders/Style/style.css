@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Preloader Style Start */
+
+
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loader {
+    height: 20px;
+    width: 250px;
+    position: relative;
+}
+
+.loader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: 2px solid white;
+}
+
+.loader--dot:first-child {
+    background-color: #8cc759;
+    animation-delay: 0.5s;
+}
+
+.loader--dot:nth-child(2) {
+    background-color: #8c6daf;
+    animation-delay: 0.4s;
+}
+
+.loader--dot:nth-child(3) {
+    background-color: #ef5d74;
+    animation-delay: 0.3s;
+}
+
+.loader--dot:nth-child(4) {
+    background-color: #f9a74b;
+    animation-delay: 0.2s;
+}
+
+.loader--dot:nth-child(5) {
+    background-color: #60beeb;
+    animation-delay: 0.1s;
+}
+
+.loader--dot:nth-child(6) {
+    background-color: #fbef5a;
+    animation-delay: 0s;
+}
+
+.loader--text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+    text-align: center;
+}
+
+.loader--text:after {
+    content: "Loading";
+    font-weight: bold;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(230px);
+    }
+
+    65% {
+        transform: translateX(230px);
+    }
+
+    95% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        content: "Loading";
+    }
+
+    25% {
+        content: "Loading.";
+    }
+
+    50% {
+        content: "Loading..";
+    }
+
+    75% {
+        content: "Loading...";
+    }
+}
+
+
+/* Preloader Style End */
+
+
+
+
+/* Nav bar style link */
+
+nav,
+div,
+ul,
+li,
+a {
+
+    justify-content: space-around;
+}
+
+nav {
+    background-color: #3A3B3C;
+
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar-nav .nav-link:hover {
+    color: #FF4433;
+    
+}
+
+
+.navbar-nav .nav-link {
+    color: #fff;
+    
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #FF4433;
+    border-radius: 20%;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #FF4433;
+}
+.navbar-nav .nav-link:hover {
+    color: #FF4433;
+}
+
+/* Nav bar Style end */
+
+
+
+
+
+
+/* Cursor Style Start */
+
+
+.carousel-inner {
+    /* height: 43.5rem; */
+    height: 44rem;
+    width: 100%;
+}
+
+/* Media quires start */
+
+
+/* Samsung gallaxy s20 screen start */
+
+@media screen and (max-width:595.2px) {
+    .carousel-inner {
+        height: 40%;
+        width: 100%;
+        top: 50%;
+    }
+}
+
+/* Samsung gallaxy s20 screen end */
+
+/*  */
+
+
+
+
+/* Ipad MINI screen size start */
+
+@media screen and (max-width:796.8px) {
+    .carousel-inner {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* Ipad MINI screen size end */
+
+
+
+/* ipad Air 4 screen size start */
+@media screen and (max-width:1042.56px) {
+    .carousel-inner {
+        height: 60%;
+        width: 100%;
+    }
+}
+
+/* ipad Air 4 screen size end */
+
+
+/* Ipad pro 11 screen size start */
+@media screen and (max-width:1238.4px) {
+    .carousel-inner {
+        height: 70%;
+        width: 100%;
+    }
+}
+
+/* Ipad pro 11 screen size end */
+
+
+/* galaxy tab s7 screen size start */
+
+@media screen and (max-width:1056px) {
+    .carousel-inner {
+        height: 60%;
+        width: 100%;
+    }
+
+}
+
+/* galaxy tab s7 screen size end */
+
+
+
+/* microsoft surface Duo screen start */
+@media screen and (max-width:777.6px) {
+    .carousel-inner {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+/* microsoft surface duo screen end */
+
+
+
+
+/* Macbook Air 13.6 inches start  */
+@media screen and (max-width:1305.6px) {
+    .carousel-inner {
+        height: 90%;
+        width: 100%;
+    }
+}
+
+/* macbook Air 13.6 inches screen end */
+
+
+/* Mackbook Air 15.6 inches screen start */
+@media screen and (max-width:1468.8px) {
+    .carousel-inner {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+/* macbook Air 15.6 inches screen end */
+
+
+/* laptop screen size start  14inches*/
+@media screen and (max-width:1344px) {
+    .carousel-inner {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* laptop sccreen size end */
+
+
+
+/* Laptop screen size start 15.6 inches */
+@media screen and (max-width:1497.6px) {
+    .carousel-inner {
+        height: 60%;
+        width: 100%;
+    }
+}
+
+/* Laptop screen size end 15.6 */
+
+
+
+/* Laptop screen size start 16.1 inches */
+
+
+
+/* @media screen and (max-width:1545.6px) {
+.carousel-inner{
+height: 44.5rem; 
+height: 0%;
+ width: 100%;
+}
+} */
+
+
+/* Laptop screen size end  */
+
+
+/* Media quires end */
+
+/* Cursor Style End */
+
+
+
+/* Our Products latest products style start */
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.view {
+    text-decoration: none;
+    color: #FF4433;
+}
+
+.latest {
+    display: flex;
+    align-items: start;
+}
+
+.view {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.cards-images {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.span {
+    color: #60beeb;
+}
+
+
+/* Our Products latest products style end */
+
+
+/* Media quires image start */
+
+
+/* Mobile screen style start */
+
+@media screen and (max-width: 567px) {
+    .image img {
+        height: 250px;
+        width: 250px;
+
+    }
+}
+
+/* Mobile screen style end */
+
+
+/* Ipad mini screen style start */
+
+@media screen and (max-width: 796.8px) {
+    .image img {
+        height: 300px;
+        width: 355px;
+
+    }
+}
+
+/* Ipad mini screen style start */
+
+
+/* Ipad Air 4 & ipad pro 11 screen style start */
+
+
+
+@media screen and (max-width: 1042.56px) {
+    .image img {
+        height: 300px;
+        width: 370px;
+    }
+}
+
+
+/* Ipad Air 4 & ipad pro 11 screen style end */
+
+
+
+/* Galaxy tab s7 screen style start */
+
+@media screen and (max-width:1056px) {
+    .image img {
+        height: 300px;
+        width: 380px;
+    }
+}
+
+/* Galaxy tab s7 screen style end */
+
+
+
+/* Microsoft surface duo screen start */
+
+@media screen and (max-with:777.6px) {
+    .image img {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+/* microsoft surface duo screen end */
+
+
+/* About us Style end */
+
+
+
+
+
+
+/* Fourth section style start */
+
+.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fouth {
+    background-color: whitesmoke;
+}
+
+/* Fourth section style end */
+
+/* Copyright style start */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Copyright style start */
